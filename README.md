@@ -1,79 +1,87 @@
-# Labo-String: CLI per la manipolazione di stringhe
+# [5577783] Labo-String – CLI per utilità su stringhe
 
-Labo-String è una semplice applicazione da linea di comando (CLI) sviluppata in Node.js, progettata per fornire utilità comuni per la manipolazione e l’analisi di stringhe.
+![CI](https://github.com/Eujiin/SSGS_Labo_valutato_2/actions/workflows/ci.yml/badge.svg)
 
-## Funzionalità disponibili
+## 📚 Descrizione
+**Labo-String** è una Command Line Interface (CLI) realizzata in Node.js che fornisce funzionalità utili per l'elaborazione di stringhe. Il progetto è stato sviluppato come esercitazione valutata per il corso di *Sviluppo di Sistemi di Gestione Software* e include best practice in termini di configurazione, test e integrazione continua (CI/CD).
 
-- Inversione di una stringa
-- Verifica se una stringa è palindroma
-- Troncamento di una stringa a una lunghezza massima specificata
-- Conteggio delle occorrenze di ciascun carattere in una stringa
+## 🔧 Funzionalità
+Il programma supporta le seguenti operazioni:
 
-## Requisiti
+- 🔁 **Inversione di una stringa**
+- 🔍 **Verifica se una stringa è palindroma** (ignorando spazi e maiuscole)
+- ✂️ **Troncamento di una stringa** a una lunghezza massima, con `...`
+- #️⃣ **Conteggio delle occorrenze** di ogni carattere
 
-- Node.js (versione 16 o superiore)
-- npm
+## 📁 Struttura del Progetto
 
-## Installazione
+```
+├── src/
+│   └── stringUtils.js        # Funzioni principali
+├── __tests__/
+│   └── stringUtils.test.js   # Test unitari con Jest
+├── index.js                  # CLI interattiva
+├── package.json              # Configurazione progetto
+└── .github/workflows/ci.yml # Workflow GitHub Actions per test e coverage
+```
 
-Clonare il repository e installare le dipendenze con il comando:
+## ▶️ Utilizzo
 
+### 📦 1. Installazione dipendenze
 ```bash
 npm ci
 ```
 
-> Nota: `npm ci` garantisce una installazione più pulita e coerente rispetto a `npm install`, ideale in ambienti di Continuous Integration.
-
-## Esecuzione
-
-L'applicazione può essere eseguita tramite:
-
+### 🚀 2. Esecuzione da terminale
 ```bash
-node index.js
+npm start <numero_funzione> <stringa_input> [parametro_aggiuntivo]
 ```
 
-### Esempio di utilizzo
-
+### 📌 Esempi
 ```bash
-$ node index.js reverse "hello"
-olleh
-
-$ node index.js isPalindrome "racecar"
-true
-
-$ node index.js truncate "questa è una stringa" 10
-questa è
-
-$ node index.js countChars "test"
-{ t: 2, e: 1, s: 1 }
+npm start 1 "ciao"          # Output: oaic
+npm start 2 "I topi non avevano nipoti"  # Output: true
+npm start 3 "questa è una prova" 10      # Output: questa è u...
+npm start 4 "banana"        # Output: { b: 1, a: 3, n: 2 }
 ```
 
-## Test
+## 🧪 Test
 
-I test sono scritti utilizzando [Jest](https://jestjs.io/). Per eseguirli:
-
+### ✔️ Eseguire i test:
 ```bash
 npm test
 ```
 
-Per generare un report sulla copertura del codice:
-
+### 📈 Test con coverage:
 ```bash
 npm run test:coverage
 ```
 
-## Struttura del progetto
+✔️ La **copertura dei test** è al **100%** per tutte le funzioni del modulo `stringUtils.js`.
 
-```
-.
-├── index.js              # Entry point dell'app CLI
-├── stringUtils.js        # Funzioni principali
-├── __tests__/            # Test unitari
-├── package.json
-├── .gitignore
-├── README.md
-```
+## 🔁 CI/CD con GitHub Actions
 
-## Licenza
+Il progetto è dotato di un workflow CI che automatizza:
 
-Questo progetto è distribuito sotto licenza MIT.
+- il checkout del codice
+- l'installazione delle dipendenze
+- l'esecuzione dei test con coverage
+- il caricamento del report HTML come artefatto
+
+### ✅ Compatibilità testata automaticamente su:
+- Node.js `18.x`
+- Node.js `20.x` *(LTS attuale)*
+- Node.js `21.x`
+
+📂 Il **report HTML** completo è scaricabile dalla sezione "Actions" di ogni esecuzione nella tab di GitHub, ed è mantenuto per 5 giorni.
+
+
+## 🛠️ Tecnologie Utilizzate
+- **Node.js** (≥ 18.x)
+- **Jest** (per testing e coverage)
+- **GitHub Actions** (per CI/CD)
+- **npm scripts** (per gestione locale del flusso di sviluppo)
+
+---
+
+🧑‍🎓 *Progetto sviluppato da Eugenio Vassallo – Matricola 5577783*
