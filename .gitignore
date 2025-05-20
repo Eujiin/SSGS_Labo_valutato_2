@@ -1,19 +1,35 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+# === Node.js ===
+node_modules/
+npm-debug.log*
 
-# Environments
-.env
-.venv
-env/
-venv/
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# Unit test / coverage reports
-.coverage
-.pytest_cache/
+# === Output di coverage e report ===
+coverage/
+.nyc_output/
 htmlcov/
+jest-html-reporters-*.html
+
+# === Log e cache ===
+logs/
+*.log
+*.tmp
+*.tsbuildinfo
+
+# === File temporanei o di compilazione ===
+dist/
+build/
+*.out
+*.bin
+*.exe
+
+# === File di sistema ===
+.DS_Store
+Thumbs.db
+
+# === IDE / Editor ===
+.idea/
+.vscode/
+*.sublime-*
+
+# === Configurazioni locali ===
+.env
+*.local

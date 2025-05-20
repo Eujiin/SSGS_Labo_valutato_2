@@ -1,12 +1,31 @@
 {
   "name": "labo-string",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "CLI Node.js per la manipolazione di stringhe: inversione, palindromi, troncamento e conteggio caratteri.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --coverage",
+    "test:coverage": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Eugenio Vassallo 5577783",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eujiin/SSGS_Labo_valutato_2.git"
+  },
+  "keywords": [
+    "cli",
+    "stringhe",
+    "nodejs",
+    "jest",
+    "palindromi",
+    "coverage"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }

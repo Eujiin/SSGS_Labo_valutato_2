@@ -1,30 +1,79 @@
-# Labo-String: CLI per Utilità su Stringhe
+# Labo-String: CLI per la manipolazione di stringhe
 
-Questo progetto fornisce una base per una semplice Command-Line Interface (CLI) Node.js che offre diverse utilità per la manipolazione di stringhe.
+Labo-String è una semplice applicazione da linea di comando (CLI) sviluppata in Node.js, progettata per fornire utilità comuni per la manipolazione e l’analisi di stringhe.
 
-## Nota Importante per lo Studente - Setup Iniziale del Progetto
+## Funzionalità disponibili
 
-Benvenuto/a a `labo-string`!
+- Inversione di una stringa
+- Verifica se una stringa è palindroma
+- Troncamento di una stringa a una lunghezza massima specificata
+- Conteggio delle occorrenze di ciascun carattere in una stringa
 
-Questo repository è un **template di partenza** per il tuo laboratorio valutato. Come avrai modo di leggere nelle istruzioni del laboratorio, una parte fondamentale del tuo lavoro iniziale (Esercizio 1) consisterà nell'analizzare attentamente la struttura e la configurazione corrente di questo progetto.
+## Requisiti
 
-**Potresti notare che alcuni aspetti della configurazione iniziale – inclusa questa stessa documentazione (`README.md`), il file `package.json` e la gestione dei file da ignorare (`.gitignore`) – sono stati volutamente lasciati incompleti o potrebbero non seguire tutte le best practice per un progetto Node.js.**
+- Node.js (versione 16 o superiore)
+- npm
 
-Il tuo primo compito sarà proprio quello di identificare queste aree di miglioramento e apportare le necessarie correzioni e completamenti, come dettagliato nelle istruzioni del laboratorio, per portare il progetto a uno standard qualitativo superiore.
+## Installazione
 
-Buona analisi e buon lavoro!
+Clonare il repository e installare le dipendenze con il comando:
 
-## Funzionalità Principali (Previste)
+```bash
+npm ci
+```
 
-* Inversione di una stringa.
-* Verifica se una stringa è palindroma.
-* Troncamento di una stringa a una lunghezza massima specificata.
-* Conteggio delle occorrenze di ciascun carattere in una stringa.
+> Nota: `npm ci` garantisce una installazione più pulita e coerente rispetto a `npm install`, ideale in ambienti di Continuous Integration.
 
-## Installazione e Avvio
+## Esecuzione
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+L'applicazione può essere eseguita tramite:
 
----
+```bash
+node index.js
+```
 
-*Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
+### Esempio di utilizzo
+
+```bash
+$ node index.js reverse "hello"
+olleh
+
+$ node index.js isPalindrome "racecar"
+true
+
+$ node index.js truncate "questa è una stringa" 10
+questa è
+
+$ node index.js countChars "test"
+{ t: 2, e: 1, s: 1 }
+```
+
+## Test
+
+I test sono scritti utilizzando [Jest](https://jestjs.io/). Per eseguirli:
+
+```bash
+npm test
+```
+
+Per generare un report sulla copertura del codice:
+
+```bash
+npm run test -- --coverage
+```
+
+## Struttura del progetto
+
+```
+.
+├── index.js              # Entry point dell'app CLI
+├── stringUtils.js        # Funzioni principali
+├── __tests__/            # Test unitari
+├── package.json
+├── .gitignore
+├── README.md
+```
+
+## Licenza
+
+Questo progetto è distribuito sotto licenza MIT.
