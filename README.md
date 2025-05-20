@@ -1,6 +1,6 @@
 # [5577783] Labo-String – CLI per utilità su stringhe
 
-![CI](https://github.com/Eujiin/SSGS_Labo_valutato_2/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Eujiin/SSGS_Labo_valutato_2/actions/workflows/ci.yaml/badge.svg)
 
 ## 📚 Descrizione
 **Labo-String** è una Command Line Interface (CLI) realizzata in Node.js che fornisce funzionalità utili per l'elaborazione di stringhe. Il progetto è stato sviluppato come esercitazione valutata per il corso di *Sviluppo di Sistemi di Gestione Software* e include best practice in termini di configurazione, test e integrazione continua (CI/CD).
