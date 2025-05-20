@@ -4,9 +4,9 @@
   "description": "CLI Node.js per la manipolazione di stringhe: inversione, palindromi, troncamento e conteggio caratteri.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest --coverage",
-    "test:coverage": "jest --coverage"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "node index.js"
   },
   "author": "Eugenio Vassallo 5577783",
   "license": "MIT",
@@ -23,9 +23,9 @@
     "coverage"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "devDependencies": {
-    "jest": "^29.0.0"
+    "jest": "^29.7.0"
   }
 }
