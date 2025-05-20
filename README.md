@@ -28,13 +28,18 @@ Il programma supporta le seguenti operazioni:
 ## 📁 Struttura del Progetto
 
 ```
-├── src/
-│   └── stringUtils.js        # Funzioni principali
-├── __tests__/
-│   └── stringUtils.test.js   # Test unitari con Jest
-├── index.js                  # CLI interattiva
-├── package.json              # Configurazione progetto
-└── .github/workflows/ci.yml # Workflow GitHub Actions per test e coverage
+ Labo-String
+├── 📂 src                 # Codice sorgente
+│   └── stringUtils.js    # Funzioni principali per la manipolazione di stringhe
+├── 📂 __tests__           # Test unitari
+│   └── stringUtils.test.js # Test automatizzati con Jest
+├── 📂 .github
+│   └── 📂 workflows
+│       └── ci.yml        # Workflow GitHub Actions per test e report coverage
+├── 📂 media              # Risorse multimediali
+│   └── demo.jpg          # Screenshot dimostrativo della CLI
+├── index.js              # Entry point CLI
+└── package.json          # Configurazione progetto Node.js e script npm
 ```
 
 ## ▶️ Utilizzo
