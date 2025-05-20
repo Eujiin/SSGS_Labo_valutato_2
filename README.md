@@ -1,9 +1,21 @@
 # [5577783] Labo-String – CLI per utilità su stringhe
 
+![String CLI](https://img.shields.io/badge/Labo--String-💻_CLI-orange?style=for-the-badge)
+
 ![CI](https://github.com/Eujiin/SSGS_Labo_valutato_2/actions/workflows/ci.yaml/badge.svg)
 
+
+![Node Version](https://img.shields.io/badge/support_-%3E=18.0.0-blue)
+
+![Status](https://img.shields.io/badge/status-WaitingReviewFromTheProf-success)
+
+![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+
+![License](https://img.shields.io/badge/license-MIT-green)
+
+
 ## 📚 Descrizione
-**Labo-String** è una Command Line Interface (CLI) realizzata in Node.js che fornisce funzionalità utili per l'elaborazione di stringhe. Il progetto è stato sviluppato come esercitazione valutata per il corso di *Sviluppo di Sistemi di Gestione Software* e include best practice in termini di configurazione, test e integrazione continua (CI/CD).
+**Labo-String** è una Command Line Interface (CLI) realizzata in Node.js che fornisce funzionalità utili per l'elaborazione di stringhe.
 
 ## 🔧 Funzionalità
 Il programma supporta le seguenti operazioni:
@@ -44,6 +56,11 @@ npm start 2 "I topi non avevano nipoti"  # Output: true
 npm start 3 "questa è una prova" 10      # Output: questa è u...
 npm start 4 "banana"        # Output: { b: 1, a: 3, n: 2 }
 ```
+## 📸 Screenshot della CLI
+
+Ecco un esempio di utilizzo reale della CLI per la funzione 2:
+
+![Esempio CLI](./media/demo.png)
 
 ## 🧪 Test
 
