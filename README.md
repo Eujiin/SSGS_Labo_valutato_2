@@ -59,7 +59,7 @@ npm test
 Per generare un report sulla copertura del codice:
 
 ```bash
-npm run test -- --coverage
+npm run test:coverage
 ```
 
 ## Struttura del progetto
